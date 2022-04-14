@@ -1,0 +1,22 @@
+.breakfast{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 30px 20px;
+}
+.cart{
+    width: 250px;
+    text-align: center;
+    height: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.6s ease;
+}
+.cart:hover{
+    -webkit-box-shadow: 1px -1px 12px 0px #000000; 
+    box-shadow: 1px -1px 12px 0px #000000;
+    transform: scale(1.05);
+}
+.cart .cart-img{
+    width: 150px;
+}

@@ -1,0 +1,24 @@
+.header-compo{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px 0;
+}
+.left-nav{
+    padding: 10px 20px;
+}
+.right-nav{
+    padding: 10px 20px;
+}
+.right-nav a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: #000;
+    font-weight: 600;
+}
+.right-nav .signUp{
+    background-color: rgba(237, 57, 99, 0.922);
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: #fff;
+}

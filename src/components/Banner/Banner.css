@@ -1,0 +1,31 @@
+.banner-section{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-grup{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.input-grup .field{
+    display: inline-block;
+    width: 75%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius:80px;
+}
+.input-grup .bttn{
+    display: inline-block;
+    margin-left: -15px; 
+    width: 25%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 80px;
+    background: rgb(232, 26, 67);
+    color: #fff;
+}
