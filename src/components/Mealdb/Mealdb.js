@@ -1,13 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink';
 import './Mealdb.css';
 
 const Mealdb = () => {
     return (
-        <div className='mealdb'>
-            <Link to='/breakfast'>Breakfast</Link>
-            <Link to='/lunch'>Lunch</Link>
-            <Link to='/dinner'>Dinner</Link>
+        <div>
+            <div className='mealdb'>
+                <CustomLink to='/home/breakfast'>Breakfast</CustomLink>
+                <CustomLink to='/home/lunch'>Lunch</CustomLink>
+                <CustomLink to='/home/dinner'>Dinner</CustomLink>
+            </div>
+
         </div>
     );
 };

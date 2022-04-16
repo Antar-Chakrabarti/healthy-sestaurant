@@ -1,25 +1,23 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Banner from './components/Banner/Banner';
 import Header from './components/Header/Header';
 import { Route, Routes } from 'react-router-dom';
-import Mealdb from './components/Mealdb/Mealdb';
 import Breakfast from './components/Breakfast/Breakfast';
-import Dinner from './components/Dinner/Dinner';
 import Lunch from './components/Lunch/Lunch';
-import WhyUs from './components/WhyUs/WhyUs';
+import Dinner from './components/Dinner/Dinner';
+import Home from './components/Home/Home';
+
 function App() {
   return (
     <div className='App'>
-      <Header/>
-      <Banner/>
-      <Mealdb/>
+      <Header />
       <Routes>
-        <Route path='/breakfast' element={<Breakfast/>}/>
-        <Route path='/lunch' element={<Lunch/>}/>
-        <Route path='/dinner' element={<Dinner/>}/>
+        <Route path='/home' element={<Home />}>
+          <Route path='breakfast' element={<Breakfast />} />
+          <Route path='lunch' element={<Lunch />} />
+          <Route path='dinner' element={<Dinner />} />
+        </Route>
       </Routes>
-      <WhyUs/>
     </div>
   );
 }
